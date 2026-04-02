@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Well Soon ❤️</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(to right, #1e3a14, #1e5d11);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        color: #fff;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.15);
+        padding: 30px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        max-width: 350px;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        background: #ff6f91;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #ff3f6c;
+    }
+
+    .hidden {
+        display: none;
+        margin-top: 20px;
+        font-weight: bold;
+        animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <h1>💖 sehat sehat kiki 💖</h1>
+    <p>kii aku kangen,cepat sembuh yaa<br>
+    woi </p>
+
+    <button onclick="showMessage()">Klik Aku</button>
+
+    <div id="message" class="hidden">
+        Aku kangen kamu sehat lagi 🥺💗<br><br>
+        Cepat sembuh yaa, biar kita bisa ketawa bareng lagi 💕<br><br>
+        Aku sayang kamu ❤️
+    </div>
+</div>
+
+<script>
+function showMessage() {
+    document.getElementById("message").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
